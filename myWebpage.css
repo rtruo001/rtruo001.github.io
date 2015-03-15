@@ -1,0 +1,250 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: black;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.hideme
+{
+    opacity: 0.25;
+}
+
+/*.parallax {
+	perspective: 1px;
+	height: 80vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.parallax__layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.parallax__layer--base {
+	transform: translateZ(0);
+}
+
+.parallax__layer--fore {
+	transform: translateZ(-2px) scale(3);
+	z-index: 1;
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}*/
+
+.entireWebPage {
+	background: black;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	height: 80px;
+	background:	rgba(1,1,1,0.4);
+	position: fixed;
+	color: white;
+	width: 100%;
+	z-index: 10000;
+}
+
+#pictureOfMe {
+	width: 70px;
+	height: 70px;
+	background-image: url("./photos/cat.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 50%;
+	border-color: black;
+  z-index: 1000;
+	position: fixed;
+	left: 70px;
+	top: 4px;
+}
+
+#navBar {
+	float: left;
+}
+
+ul#nav {
+	margin: 28px 200px;
+	list-style: none;
+}
+
+ul#nav li {
+	margin: 0 20px;
+	float: left;
+}
+
+.textInSection {
+	font-size: 40px;
+	color: white;
+	z-index: 99999
+}
+
+#homeContent {
+	z-index: 10;
+}
+
+/*
+THE FIRST SLIDE OF WEBSITE
+*/
+#home {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("./photos/mountainPose.jpg");	
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 10;
+	color: rgba(1, 1, 1, 0.5);
+}
+
+video#bgvid {
+	width: 100vw;
+	min-width: 100%; min-height: 100%;
+	z-index: 0;
+	background-size: cover;
+}
+
+#homeText {
+	color: white;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	padding-top: 10%;
+	text-shadow: 0px 0px 50px black;
+	text-align: center;
+}
+
+/*
+ABOUT ME SECTIONS
+*/
+#aboutMe {
+	width: 100vw;
+  height: 100vh;
+  background: black;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 100;
+	position: relative;
+}
+
+#aboutMePicture {
+	display: inline-block;
+ 	width: 510px;
+ 	padding: 60px;
+}
+
+#aboutMePicture img {
+	width: 450px;
+	height: 600px;
+	border-width: 2px;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: white;
+}
+
+#aboutMeText {
+	display: inline-block;
+	padding: 5%;
+ 	position: absolute;
+ 	top: 50%;
+ 	transform: translate(0, -50%);
+}
+
+#aboutMe .textInSection {
+	font-size: 16px;
+	text-align: none;
+}
+
+#resume {
+	width: 100vw;
+  height: 100vh;
+	background-image: url("./photos/frenchbulldog.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 200;
+}
+
+/*
+Contact Links
+*/
+#myLinks {
+	width: 100vw;
+	height: 200px;
+	margin-top: 80px;
+	background: rgba(0,0,0,0);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 300;
+}
+
+#myLinks h2 {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	
+}
+
+#linkIcons {
+	text-align: center;
+	padding: 5px;
+	position: relative;
+}
+
+.icons {
+
+}
+
+.icons h1 {
+	display: inline-block;
+	font-size: 8px;
+	margin-right: 20px;
+	position: relative;
+	bottom: 5px;
+	padding-left: 5px;
+}
+
+.icons h1:hover{
+	/*Light Blue*/
+	color: #add8e6;
+}
+
+.icons:hover {
+	/*Light Blue*/
+	color: #add8e6;
+	text-decoration: none;
+}

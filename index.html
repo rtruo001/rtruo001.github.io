@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 	
+	<title>Randy Truong's Homepage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="myWebpage.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+
+</head>
+
+<body>  
+
+	<div class="entireWebPage">
+	
+		<header>
+			<section id="picture">
+				<div id="pictureOfMe"></div>
+			</section>	
+
+		<section id="navBar">
+			<ul id="nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#aboutMe">About Me</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<li><a href="#myLinks">Links</a></li>
+			</ul>
+		</section>	
+	</header>
+
+		<section id="home">
+			<div id="homeContent">
+				
+				<div class="textInSection" id="homeText">	
+					<h1>Randy's Homepage</h1>
+				</div>
+				<!-- <video autoplay loop muted id="bgvid">
+					<source src="gopro.mp4" type="video/mp4">
+				</video> -->
+			</div>
+		</section>
+
+		<section id="aboutMe" class="hideme">
+			<div id="aboutMePicture">
+				<img src="./photos/me.jpg"/>
+			</div>
+			<div id="aboutMeText">
+				<div class="textInSection">
+					<p>
+						<br>
+						Welcome to my website
+						<br>
+						<br>
+						I am Randy Truong and I am currently looking for an internship or job. I attend University of California Riverside as a Computer Science major. I started programming when I was in Gabrielino High School of my Junior year. I was fortunate enough to attend a high school which provided courses in programming such as Java, C++, etc. I had no idea what programming was, yet was intrigued by how technology influenced the world. Curiosity forced me to enroll. Turns out, this was a decision I would not regret. I am always updating my website so please come by every so often! Have a look around!
+						<br>
+						<br>
+						Email: rtruo001@ucr.edu
+		     	</p>
+		    </div>
+		   </div>
+		</section>
+
+		<section id="resume">
+			<div class="textInSection">
+				<h1>Resume</h1>
+			</div>
+		</section>
+
+		<section id="myLinks">
+			<h2>Follow me!</h2>
+			<div id="linkIcons">
+				<a class="icons" href="https://github.com/rtruo001" target="_blank">
+	        <i class="fa fa-github fa-2x contact-links"></i>
+	        <h1 class="linksHeading">Github</h1>
+	      </a>
+	      <a class="icons" href="https://instagram.com/mesorandeee" target="_blank">
+	        <i class="fa fa-instagram fa-2x contact-links"></i>
+	        <h1 class="linksHeading">Instagram</h1>
+	      </a>
+	      <a class="icons" href="https://linkedin.com/in/randytruong" target="_blank">
+	      	<i class="fa fa-linkedin fa-2x contact-links"></i>
+	      	<h1 class="linksHeading">Linkedin</h1>
+	      </a>
+			</div>
+		</section>
+
+	</div>
+
+<!-- <form id="checkout" method="post" action="/checkout">
+  <div id="dropin"></div>
+  <input type="submit" value="Pay $10">
+</form>
+
+<script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+
+<script>
+  braintree.setup(
+    // Replace this with a client token from your server
+    "eyJ2ZXJzaW9uIjoyLCJhdXRob3JpemF0aW9uRmluZ2VycHJpbnQiOiI5YjRiZjdmYzVkZmVmNmUyMGQ0ZjVkMDkyMjYyOWZiNDVjZTExMzg2MmVjNTM3ODE3MTlmZTMzYzM0YTFkNjM1fGNyZWF0ZWRfYXQ9MjAxNS0wMi0yOFQyMzowOToxNS45MDEyNjEwNzkrMDAwMFx1MDAyNm1lcmNoYW50X2lkPWRjcHNweTJicndkanIzcW5cdTAwMjZwdWJsaWNfa2V5PTl3d3J6cWszdnIzdDRuYzgiLCJjb25maWdVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvZGNwc3B5MmJyd2RqcjNxbi9jbGllbnRfYXBpL3YxL2NvbmZpZ3VyYXRpb24iLCJjaGFsbGVuZ2VzIjpbXSwiY2xpZW50QXBpVXJsIjoiaHR0cHM6Ly9hcGkuc2FuZGJveC5icmFpbnRyZWVnYXRld2F5LmNvbTo0NDMvbWVyY2hhbnRzL2RjcHNweTJicndkanIzcW4vY2xpZW50X2FwaSIsImFzc2V0c1VybCI6Imh0dHBzOi8vYXNzZXRzLmJyYWludHJlZWdhdGV3YXkuY29tIiwiYXV0aFVybCI6Imh0dHBzOi8vYXV0aC52ZW5tby5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tIiwiYW5hbHl0aWNzIjp7InVybCI6Imh0dHBzOi8vY2xpZW50LWFuYWx5dGljcy5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tIn0sInRocmVlRFNlY3VyZUVuYWJsZWQiOnRydWUsInRocmVlRFNlY3VyZSI6eyJsb29rdXBVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvZGNwc3B5MmJyd2RqcjNxbi90aHJlZV9kX3NlY3VyZS9sb29rdXAifSwicGF5cGFsRW5hYmxlZCI6dHJ1ZSwicGF5cGFsIjp7ImRpc3BsYXlOYW1lIjoiQWNtZSBXaWRnZXRzLCBMdGQuIChTYW5kYm94KSIsImNsaWVudElkIjpudWxsLCJwcml2YWN5VXJsIjoiaHR0cDovL2V4YW1wbGUuY29tL3BwIiwidXNlckFncmVlbWVudFVybCI6Imh0dHA6Ly9leGFtcGxlLmNvbS90b3MiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hc3NldHMuYnJhaW50cmVlZ2F0ZXdheS5jb20iLCJhc3NldHNVcmwiOiJodHRwczovL2NoZWNrb3V0LnBheXBhbC5jb20iLCJkaXJlY3RCYXNlVXJsIjpudWxsLCJhbGxvd0h0dHAiOnRydWUsImVudmlyb25tZW50Tm9OZXR3b3JrIjp0cnVlLCJlbnZpcm9ubWVudCI6Im9mZmxpbmUiLCJ1bnZldHRlZE1lcmNoYW50IjpmYWxzZSwibWVyY2hhbnRBY2NvdW50SWQiOiJzdGNoMm5mZGZ3c3p5dHc1IiwiY3VycmVuY3lJc29Db2RlIjoiVVNEIn0sImNvaW5iYXNlRW5hYmxlZCI6dHJ1ZSwiY29pbmJhc2UiOnsiY2xpZW50SWQiOiJhZTBkMTk4MWI1MzcxNDgzZDZkODA2OTA5M2EwNjY5MjEyMGRiZTM0YWE0NTBlNzY0ZmY2NTI2ZWVmODhiMTlkIiwibWVyY2hhbnRBY2NvdW50IjoiZGV2cytzYW5kYm94LXNhbXBsZS1tZXJjaGFudEBicmFpbnRyZWVwYXltZW50cy5jb20iLCJzY29wZXMiOiJhdXRob3JpemF0aW9uczpicmFpbnRyZWUgdXNlciIsInJlZGlyZWN0VXJsIjoiaHR0cHM6Ly9hc3NldHMuYnJhaW50cmVlZ2F0ZXdheS5jb20vY29pbmJhc2Uvb2F1dGgvcmVkaXJlY3QtbGFuZGluZy5odG1sIn0sIm1lcmNoYW50SWQiOiJkY3BzcHkyYnJ3ZGpyM3FuIiwidmVubW8iOiJvZmZsaW5lIiwiYXBwbGVQYXkiOnsic3RhdHVzIjoibW9jayIsImNvdW50cnlDb2RlIjoiVVMiLCJjdXJyZW5jeUNvZGUiOiJVU0QiLCJtZXJjaGFudElkZW50aWZpZXIiOiJtZXJjaGFudC5jb20uYnJhaW50cmVlcGF5bWVudHMuZGV2LWRjb3BlbGFuZCIsInN1cHBvcnRlZE5ldHdvcmtzIjpbInZpc2EiLCJtYXN0ZXJjYXJkIiwiYW1leCJdfX0=",
+    'dropin', {
+      container: 'dropin'
+    });
+</script>
+ -->
+
+<script type="text/javascript" src="./js/website.js"></script>
+
+</body>
+
+</html>
