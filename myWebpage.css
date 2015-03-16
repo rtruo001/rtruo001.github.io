@@ -76,10 +76,12 @@ header {
 #pictureOfMe {
 	width: 70px;
 	height: 70px;
-	background-image: url("./photos/cat.jpg");
+	/*background-image: url("./photos/cat.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center center;*/
+	background-color: #00AAEE;
+	opacity: 0.7;
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 50%;
@@ -88,6 +90,11 @@ header {
 	position: fixed;
 	left: 70px;
 	top: 4px;
+}
+
+#pictureOfMe h1 {
+	font-size: 50px;
+	text-align: center;
 }
 
 #navBar {
@@ -151,7 +158,9 @@ ABOUT ME SECTIONS
 #aboutMe {
 	width: 100vw;
   height: 100vh;
-  background: black;
+  /*Light Blue*/
+  background-color: black;
+  background-image: url("./photos/Earth.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -162,22 +171,23 @@ ABOUT ME SECTIONS
 #aboutMePicture {
 	display: inline-block;
  	width: 510px;
- 	padding: 60px;
+ 	/*padding: 60px;*/
 }
 
 #aboutMePicture img {
 	width: 450px;
 	height: 600px;
-	border-width: 2px;
 	border-radius: 50%;
-	border-style: solid;
-	border-color: white;
+	position: absolute;
+	top: 50%;
+	left: 3%;
+ 	transform: translate(0, -50%);
 }
 
 #aboutMeText {
 	display: inline-block;
-	padding: 5%;
  	position: absolute;
+ 	padding-right: 4%;
  	top: 50%;
  	transform: translate(0, -50%);
 }
@@ -189,12 +199,33 @@ ABOUT ME SECTIONS
 
 #resume {
 	width: 100vw;
-  height: 100vh;
-	background-image: url("./photos/frenchbulldog.jpg");
+  height: 200px;
+	background-image: url("./photos/nightsky.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
+	position: relative;
 	z-index: 200;
+}
+
+#resume h1 {
+	text-shadow: 15px 15px 3px black;
+}
+
+#resume a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+ 	transform: translate(-50%, -50%);
+}
+
+#resume a:hover {
+	text-decoration: none;
+}
+
+#resume a:hover h1{
+	text-shadow: 15px 15px 20px black;
+	opacity: 0.8;
 }
 
 /*
@@ -202,8 +233,7 @@ Contact Links
 */
 #myLinks {
 	width: 100vw;
-	height: 200px;
-	margin-top: 80px;
+	height: 80px;
 	background: rgba(0,0,0,0);
 	background-attachment: fixed;
 	background-size: cover;
@@ -216,17 +246,12 @@ Contact Links
 	font-size: 20px;
 	text-align: center;
 	padding: 10px;
-	
 }
 
 #linkIcons {
 	text-align: center;
 	padding: 5px;
 	position: relative;
-}
-
-.icons {
-
 }
 
 .icons h1 {
