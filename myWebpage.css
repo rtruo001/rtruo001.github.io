@@ -64,6 +64,9 @@ a:active {
 	font-family: 'Open Sans', sans-serif;
 }
 
+/*
+Entire header
+*/
 header {
 	height: 80px;
 	background:	rgba(1,1,1,0.4);
@@ -80,12 +83,12 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;*/
-	background-color: #00AAEE;
-	opacity: 0.7;
-	border-width: 1px;
+	/*background-color: black;*/
+	/*opacity: 0.5;*/
+	/*border-width: 1px;
 	border-style: solid;
 	border-radius: 50%;
-	border-color: black;
+	border-color: black;*/
   z-index: 1000;
 	position: fixed;
 	left: 70px;
@@ -159,8 +162,8 @@ ABOUT ME SECTIONS
 	width: 100vw;
   height: 100vh;
   /*Light Blue*/
-  background-color: black;
-  background-image: url("./photos/Earth.jpg");
+  background-color: #405898;
+  background-image: url("./photos/sleepingdog.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -195,12 +198,25 @@ ABOUT ME SECTIONS
 #aboutMe .textInSection {
 	font-size: 16px;
 	text-align: none;
+	text-shadow: 0px 2px 3px black, 0px -2px 3px black, 2px 0px 3px black, -2px 0px 3px black;
 }
 
+#neverBeDisappointed {
+	width: 100vw;
+  height: 100vh;
+	background-image: url("./photos/InspirationalWallpaper.png");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*
+Resume Section
+*/
 #resume {
 	width: 100vw;
-  height: 200px;
-	background-image: url("./photos/nightsky.jpg");
+  height: 120px;
+	background-image: url("./photos/Earth.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -209,7 +225,9 @@ ABOUT ME SECTIONS
 }
 
 #resume h1 {
-	text-shadow: 15px 15px 3px black;
+	font-size: 30px;
+	text-shadow: 0px 0px 20px black;
+	opacity: 0.7;
 }
 
 #resume a {
@@ -224,12 +242,12 @@ ABOUT ME SECTIONS
 }
 
 #resume a:hover h1{
-	text-shadow: 15px 15px 20px black;
-	opacity: 0.8;
+	text-shadow: 0px 0px 50px white;
+	opacity: 1.0;
 }
 
 /*
-Contact Links
+Contact Links Resume
 */
 #myLinks {
 	width: 100vw;

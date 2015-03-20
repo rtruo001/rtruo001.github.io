@@ -10,6 +10,7 @@ $(document).ready(function(){
   $('#nav').localScroll(800);
   $('#home').parallax("50%", 0.1);
   $('#aboutMe').parallax("50%", 0.1);
+  $('#neverBeDisappointed').parallax("50%", 0.1);
   // $('#resume').parallax("50%", 0.1);
   // $('#myLinks').parallax("50%", 0.1);
 });
