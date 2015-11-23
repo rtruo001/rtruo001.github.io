@@ -1,0 +1,24 @@
+/*  =============================================================================
+    
+    Copyright © Randy Truong
+    ========================================================================== */
+
+#project-section {
+  top: 200%;
+
+  background-color: #444444;
+}
+
+#project-1 {
+  left: 0%;
+}
+
+#project-2 {
+  left: 100%;
+  background-color: #FFAAAA;
+}
+
+#project-3 {
+  left: 200%;
+  background-color: #DDDDDD;
+}
