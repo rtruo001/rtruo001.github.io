@@ -4,11 +4,13 @@
     ========================================================================== */
 
 #main-splash-screen-section {
+  /* The position of the main splash screen section */
   top: 0%;
 
-  background-image: url("../img/mountainPose.jpg");
+  background-image: url("../img/mountainPose-min.jpg");
   background-attachment: fixed;
-  background-position: center top;
+  background-size: cover;
+  background-repeat: none;
 
   position: relative;
 }
@@ -16,9 +18,22 @@
 #my-name-splash-screen {
   color: #BBBBBB;
   font-size: 120px;
-  font-weight: 500;
+
+  font-weight: 100;
   text-align: center;
   text-shadow: 0px 0px 1px #000000;
   position: relative;
   top: 80px;
+}
+
+@media all and (max-width: 850px) {
+  #my-name-splash-screen {
+    font-size: 80px;
+  }
+}
+
+@media all and (max-width: 580px) {
+  #my-name-splash-screen {
+    font-size: 50px;
+  }
 }

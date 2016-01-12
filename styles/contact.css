@@ -1,0 +1,118 @@
+/*  =============================================================================
+    
+    Copyright © Randy Truong
+    ========================================================================== */
+
+#contact-section {
+  /* The position of the contact section */
+  top: 300%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+
+  background-color: #000044;
+}
+
+.contact-email {
+  color: #CCCCCC;
+  font-size: 24px;
+  margin: 20px;
+}
+
+.email-actual-text {
+  color: white;
+  font-weight: 900;
+  display: inline-block;
+  border-bottom: 1px solid white;
+}
+
+.icons-section {
+  width: auto;
+  height: auto;
+
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center;
+
+  color: white;
+
+  text-align: center;
+}
+
+.icon-individual-div {
+  width: auto;
+  height: auto;
+  margin: 20px;  
+}
+
+.icons-section .fa {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50px 50px 50px 50px;
+
+  /* To center the icons in the circle*/
+  padding: 25px;
+
+  font-size: 50px;
+  color: white;
+  background-color: #555555;
+
+  /* When hovering, changes the cursor to the hand */
+  cursor: pointer; cursor: hand;
+}
+
+body.disable-hover .icons-section .fa {
+  -webkit-transition: color 1.0s, background-color 1.0s;
+  -moz-transition: color 1.0s, background-color 1.0s;
+  -0-transition: color 1.0s, background-color 1.0s;
+  -ms-transition: color 1.0s, background-color 1.0s;
+  transition: color 1.0s, background-color 1.0s;
+}
+
+.icon-individual-div:hover .fa {
+  color: #000077;
+  background-color: #CCCCDD; 
+}
+
+.copyright-footer {
+  width: 100%;
+  height: 20px;
+
+  /* FOnt */
+  color: #CCCCCC;
+  text-align: center;
+
+  /* Position of the text */
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 15px;
+}
+
+@media all and (max-width: 680px) {
+  .contact-email {
+    font-size: 18px;
+    margin: 0px
+  }
+
+  .icons-section {
+    flex-direction: column;
+  }
+  .icon-individual-div {
+    margin: 10px;
+  }
+  .icons-section .fa{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .contact-email {
+    font-size: 15px;
+  }
+}

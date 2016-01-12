@@ -99,6 +99,7 @@ function stopWheel(e) {
 
   // If not in tbe process of a scroll, then actually scrolls the screen depending if the screen was scrollded down or up
   if (!ifScrollTransitioning) {
+    reenableButtonAnimations();
     var evt=window.event || e
 
     // The Speed and direction of the mousewheel scroll
@@ -169,19 +170,16 @@ X 1 State4: Hover over button after button finishes Hover Animation and clicking
   //   return;
   // }
 
-  // STATE 6
   if (ifScrollTransitioning) {
     ifScrollTransitioning = false;
     reenableButtonAnimations();
   }
 
-  // STATE 2
   if (ifButtonsAreUnHovering) {
     ifButtonsAreUnHovering = false;
     ifButtonsAreUnHovered = true;
   }
 
-  // STATE 1
   if (ifButtonsAreHovering) {
     ifButtonsAreHovering = false;
     ifButtonsAreHovered = true;
@@ -194,12 +192,20 @@ function upSlide() {
     return;
   }
 
+  // Change color of the previous slide to transparent to indicate not on that slide
+  changeColorOfDotsForNav(divWindowPositionY, "transparent");
+
   // Move to above slide
   --divWindowPositionY;
 
+  // Change color of the dots to indicate which page user is currently on
+  changeColorOfDotsForNav(divWindowPositionY, "white");
+
+  // Changes the nav font colors depending on the background
+  checkFontColorInNav();
+
   // Scrolling is now transitioning
   ifScrollTransitioning = true;
-  console.log("Up");
 
   // Moves the screen to the new page
   divHeight = $(window).height();
@@ -214,12 +220,20 @@ function downSlide() {
     return;
   }
 
+  // Change color of the previous slide to transparent to indicate not on that slide
+  changeColorOfDotsForNav(divWindowPositionY, "transparent");
+
   // Move to below slide
   ++divWindowPositionY;
 
+  // Change color of the dots to indicate which page user is currently on
+  changeColorOfDotsForNav(divWindowPositionY, "white");
+
+  // Changes the nav font colors depending on the background
+  checkFontColorInNav();
+  
   // Scrolling is now transitioning
   ifScrollTransitioning = true;
-  console.log("Down");
 
   // Moves the screen to the new page
   divHeight = $(window).height();
@@ -230,13 +244,26 @@ function downSlide() {
 
 function leftSlide() {
   disableButtonAnimations();
+  if(ifScrollTransitioning) {
+    return;
+  }
+  
+  // Change color of the previous slide to transparent to indicate not on that slide
+  changeColorOfDotsForProjectNav(divWindowPositionX, "transparent");
+  
   if (divWindowPositionX <= 0) {
     divWindowPositionX = HORIZONTALNUMBEROFPAGES - 1;  
   }
   else {
-    // Move to below slide
+    // Move to previous slide
     --divWindowPositionX;
   }
+
+  // Change color of the dots to indicate which page user is currently on
+  changeColorOfDotsForProjectNav(divWindowPositionX, "white");
+
+  // Changes the nav font colors depending on the background
+  checkFontColorInNav();
 
   // Scrolling is now transitioning
   ifScrollTransitioning = true;
@@ -244,7 +271,7 @@ function leftSlide() {
   divWidth = $(window).width();
   leftAttr = parseInt($('.pages-horizontal').css('left'), 10);
   newLeftPos = leftAttr + divWidth
-  if (newLeftPos == (divWidth)) {
+  if (newLeftPos >= (divWidth)) {
     $('.pages-horizontal').css('left', 2 * -divWidth + 'px');
   }
   else {
@@ -254,13 +281,26 @@ function leftSlide() {
 
 function rightSlide() {
   disableButtonAnimations();
+  if(ifScrollTransitioning) {
+    return;
+  }
+
+  // Change color of the previous slide to transparent to indicate not on that slide
+  changeColorOfDotsForProjectNav(divWindowPositionX, "transparent");
+
   if (divWindowPositionX >= HORIZONTALNUMBEROFPAGES - 1) {
     divWindowPositionX = 0;  
   }
   else {
-    // Move to below slide
+    // Move to next slide
     ++divWindowPositionX;
   }
+
+  // Change color of the dots to indicate which page user is currently on
+  changeColorOfDotsForProjectNav(divWindowPositionX, "white");
+
+  // Changes the nav font colors depending on the background
+  checkFontColorInNav();
 
   // Scrolling is now transitioning
   ifScrollTransitioning = true;
@@ -269,7 +309,7 @@ function rightSlide() {
   leftAttr = parseInt($('.pages-horizontal').css('left'), 10);
   newRightPos = leftAttr - divWidth;
   // If at the end of the sliding div, move back to the first page
-  if (newRightPos == (3 * -divWidth)) {
+  if (newRightPos <= (3 * -divWidth)) {
     $('.pages-horizontal').css('left', '0px');
   }
   // Moves to the right page
@@ -279,15 +319,12 @@ function rightSlide() {
 }
 
 function disableButtonAnimations() {
-  console.log("Disabled buttons");
-
   $('body').removeClass('disable-hover');
   // $('pages-vertical .pages').addClass('.notransition'); // Disable transitions  
   // $('pages-vertical .pages').addClass('.notransition'); // Disable transitions  
 }
 
 function reenableButtonAnimations() {
-    console.log("Allowed buttons");
     $('body').addClass('disable-hover');
     // $('pages-vertical .up-slide-button')[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
     // $('pages-vertical .up-slide-button').removeClass('.notransition'); // Re-enable transitions

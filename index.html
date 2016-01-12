@@ -17,52 +17,181 @@
   <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
   
   <!-- Font Awesome / Icons -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/webpage.css">
+  <link rel="stylesheet" href="styles/nav.css">
   <link rel="stylesheet" href="styles/splashScreen.css">
   <link rel="stylesheet" href="styles/workExperience.css">
   <link rel="stylesheet" href="styles/projects.css">
+  <link rel="stylesheet" href="styles/contact.css">
 
 </head>
 
 <body class='disable-hover'>
+
+  <!-- Nav section which contains each page's section -->
+  <nav>
+    <div class='nav-section'>
+      <div class='nav-bullet-section' id='dot-slide-1' onclick='goToClickedSlide(this)'>
+        <div class='nav-dots' id='dot-1'></div>
+        Home
+      </div>
+
+      <div class='nav-bullet-section' id='dot-slide-2' onclick='goToClickedSlide(this)'>
+        <div class='nav-dots' id='dot-2'></div>
+        About Me
+      </div>
+
+      <div class='nav-bullet-section' id='dot-slide-3' onclick='goToClickedSlide(this)'>
+        <div class='nav-dots' id='dot-3'></div>
+        Projects
+      </div>
+
+      <div class='nav-bullet-section' id='dot-slide-4' onclick='goToClickedSlide(this)'>
+        <div class='nav-dots' id='dot-4'></div>
+        Contact
+      </div>
+    </div>
+  </nav>
+
+  <!-- The actual VERTICAL pages -->
   <div class='pages-vertical'>
+    <!-- The main Home section -->
     <div class='page' id='main-splash-screen-section' >
       <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
       <div id='my-name-splash-screen'>Randy Truong</div>
     </div>
     
+    <!-- Work experience section -->
     <div class='page' id='work-experience-section'>
       <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
       <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
-      Hi
+      <!-- <img src="img/gradPose-min.jpg" class='grad-image'> -->
+      <div class='grad-image'></div>
+      <div class='about-me-text' class='text-container'>
+        <h1>Hello! I'm Randy Truong.</h1>
+        
+        I have been coding nearly 7 years of my life, beginning of my high school junior year. When I finally reached my undergraduate years, I decided to pursue Computer Science as my field of study. Four years later, I am now a recent Summer 2015 graduate of Universtiy of California Riverside.  After graduating, I gave myself the next six months in doing whatever I wanted to do. I began post-grad in co-founding Vent Origins, a group dedicated in building applications with the goal in eventually making the world a better place. After these six months, I gained incredible insight of working with others, managing my time, learning the both the front end and back end in developing applications, and especially having the persistance and motivation to even do this in the first place. I really do consider myself to be a full stack developer, and I will continue to work and improve on my skills. Now that these six months are over, I am ready to move onto new and better things.  Therefore I am currently looking for a full-time/internship position as a Software Engineer. <br> <br>
+
+        Please take a look around my personal website made with basic HTML/CSS/Javascript. I hope you enjoy what you see as much as I enjoy building this website!
+      </div>
     </div>
     
+    <!-- Projects section, with horizontal pages, each page represents a project -->
     <div class='page' id='project-section'>
+
+      <!-- The project nav section -->
+      <div class='project-dots'>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-1")'>
+          <div class='project-dot' id='project-dot-1'></div>
+        </div>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-2")'>
+          <div class='project-dot' id='project-dot-2'></div>
+        </div>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-3")'>
+          <div class='project-dot' id='project-dot-3'></div>
+        </div>
+      </div>
+
+      <!-- Project HORIZONTAL pages -->
       <div class='pages-horizontal'>
         <div class='page' id='project-1'>
           <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
           <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
           <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
-          Proj1
+          
+          <div class='project-slide-left-side'>
+            <img class='img-png' src='img/4.0-battle2.png'>
+            <img class='img-png' src='img/rules.png'>    
+          </div>
+
+          <div class='project-slide-right-side'>
+            <div class='project-text'>
+              <h1>Sir Prance</h1>
+              is a mobile game built on both the Android and IOS devices. Implementation uses concepts of Object Oriented Programming, timer callbacks (State machines), animations, view controllers, and etc. The rules of the game are to choose three weapons: bow, staff, and sword. Choose the correct stance to defeat the enemy. Choose the wrong stance and it's game over. We went through the entire process from downloading Android Studios and XCode to uploading the game onto the app stores. Check out Sir Prance on your device's app store. Download and play! <br> </br>
+
+              <div class='hashtags'>
+                <div class='hash-tags'>Swift 2</div> 
+                <div class='hash-tags'>Java</div>
+                <div class='hash-tags'>IOS</div>
+                <div class='hash-tags'>Android</div>
+              </div>
+            </div>
+          </div>
         </div>
         
         <div class='page' id='project-2'>
           <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
           <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
           <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
-          Proj2
+          
+          <div class='project-slide-left-side'>
+            <img class='img-png' src='img/ventdj.png'>
+          </div>
+
+          <div class='project-slide-right-side'>
+            <div class='project-text'>
+              <h1>Vent DJ</h1>
+              is an innovative way to listen to music, allowing you to create a playlist that consists of Youtube videos and SoundCloud tracks. Start your search with your favorite song, listing the most popular and relevant tags. Add your songs to the queue by clicking the title, and enjoy your newly generated playlist. <br> </br>
+
+              <div class='hashtags'>
+                <div class='hash-tags'>HTML/CSS</div> 
+                <div class='hash-tags'>Javascript</div>
+                <div class='hash-tags'>Youtube API</div>
+                <div class='hash-tags'>SoundCloud API</div>
+              </div>
+            </div>
+          </div>
         </div>
         
         <div class='page' id='project-3'>
           <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
           <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
           <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
-          Proj3
+          
+          <div class='project-slide-left-side'>
+            <img class='img-png' src='img/ventdj.png'>
+          </div>
+          <div class='project-slide-right-side'>
+            <div class='project-text'>
+              <h1>Vent Tag</h1>
+              builds upon Spotify by allowing users to add hashtags to actual Spotify songs. Using Spotify's API, we acquired user's playlists and displayed it onto the screen, allowing users to add hashtags as they please. Users now can create new playlists with their hashtagged songs and playlists. This makes new ways to store and share music. Vent Tag uses Parse to store the songs specific to that hashtag depending on which user has logged in. This was the first project Vent Origins worked on and was not the last. <br> </br>
+
+              <div class='hashtags'>
+                <div class='hash-tags'>HTML/CSS</div> 
+                <div class='hash-tags'>Javascript</div>
+                <div class='hash-tags'>Spotify API</div>
+                <div class='hash-tags'>Parse</div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>  
+    </div>
+
+    <!-- My contact section -->
+    <div class='page' id='contact-section'>
+      <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+
+      <div class='contact-email'>
+        Get to know me!
       </div>
+      <div class='icons-section'>
+        <div class='icon-individual-div'> <a href="http://www.facebook.com/MeSoRandeee" target="_blank"> <i class="fa fa-facebook"></i></a></div>
+        <div class='icon-individual-div'> <a href="http://www.twitter.com/MeSoRandeee" target="_blank"> <i class="fa fa-twitter"></i></a></div>
+        <div class='icon-individual-div'> <a href="http://www.instagram.com/MeSoRandeee" target="_blank"> <i class="fa fa-instagram"></i></a></div>
+        <div class='icon-individual-div'> <a href="https://www.linkedin.com/in/randytruong" target="_blank"> <i class="fa fa-linkedin"></i></a></div>
+        <div class='icon-individual-div'> <a href="https://github.com/rtruo001" target="_blank"> <i class="fa fa-github"></i></a></div>
+      </div>
+      <div class='contact-email'>
+        Contact me at <div class='email-actual-text'>randtru@gmail.com</div>
+      </div> 
+      <div class='copyright-footer'> © 2016 Copyright Randy Truong</div>
     </div>
   </div>
 
@@ -72,4 +201,6 @@
   <!-- Scripts -->
   <script type="text/javascript" src="js/webpage.js"></script>
   <script type="text/javascript" src="js/scroll.js"></script>
+  <script type="text/javascript" src="js/nav.js"></script>
+  <script type="text/javascript" src="js/projects.js"></script>
 </body>

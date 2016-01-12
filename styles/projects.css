@@ -5,20 +5,180 @@
 
 #project-section {
   top: 200%;
-
-  background-color: #444444;
 }
 
 #project-1 {
   left: 0%;
+  background-color: #FF9999;
 }
 
 #project-2 {
   left: 100%;
-  background-color: #FFAAAA;
+  background-color: #EFEFEF;
 }
 
 #project-3 {
   left: 200%;
-  background-color: #DDDDDD;
+  background-color: #71B533;
+}
+
+/* Each project slide has a left side and a right side*/
+/* The left side will consist of images */
+.project-slide-left-side {
+  width: 50%;
+  height: 100%;
+
+  position: relative;
+  float: left;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+/* The right side will consist of text and hashtags */
+.project-slide-right-side {
+  width: 50%;
+  height: 100%;
+
+  position: relative;
+  float: left;
+}
+
+.project-text {
+  /* Font */
+  color: #555555;
+  font-size: 22px;
+  /*font-size: 1vw;*/
+  font-weight: 600;
+
+  /* Keeps it right of the div */
+  float: right;
+  padding: 20px;
+  /*vertical-align: middle;*/
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-text h1 {
+  font-size: 40px;
+  font-style: bold;
+}
+
+#project-2 .img-png, #project-3 .img-png {
+  border-radius: 0px 0px 0px 0px;
+}
+
+.img-png {
+  width: auto;
+  height: 40%;
+  margin: 10px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+#project-3 .project-text {
+  color: #FFFFFF;
+}
+
+#project-3 .hash-tags {
+  color: #DDDDDD;
+}
+
+.hash-tags {
+  color: #777777;
+  margin-right: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  border-bottom: 1px solid #777777;
+  display: inline-block;
+}
+
+.hash-tags:hover {
+  opacity: 1.0;
+}
+
+@media all and (max-width: 1200px) {
+  .img-png {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media all and (max-height: 700px), all and (max-width: 600px) {
+  .project-text {
+    font-size: 14px;
+  }
+
+  .project-text h1 {
+    font-size: 18px;
+  }
+
+  .img-png {
+    height: 40%;
+    width: auto;
+    border-radius: 20px 20px 20px 20px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .img-png {
+    height: auto;
+    width: 80%;
+  }
+}
+
+@media all and (max-height: 400px) {
+  .img-png {
+    height: 40%;
+    width: auto;
+  }
+}
+
+/* =============================================================================
+
+THE BUTTONS FOR NAVIGATING THROUGH PROJECTS
+
+================================================================================ */
+
+#project-dot-1 {
+  background-color: white;
+}
+
+/* The entire project dots div */
+.project-dots {
+  width: 100px;
+  text-align: center;
+  background-color: transparent;
+  position: absolute;
+  bottom: 60px;
+  z-index: 5000000;
+}
+
+.project-bullet-section {
+  height: 14px;
+  display: inline-block;
+  /* Changes cursor when hovering */
+  cursor: pointer; cursor: hand;
+}
+
+/* Each individual dot in the projects dot section */
+.project-dot {
+  width: 9px;
+  height: 9px;
+  margin-left: 3px;
+  margin-right: 3px;
+
+  border: 1px solid #888888;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.project-bullet-section:hover .project-dot{
+  border-color: white;
 }

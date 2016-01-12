@@ -6,5 +6,125 @@
 #work-experience-section {
   top: 100%;
 
-  background-color: black;
+  background-color: #F2F2FF;
+  max-width: 100%;
+  height: auto;
+}
+
+.grad-image {
+  width: 50%;
+  height: 100%;
+  background-image: url("../img/gradPose-min.jpg");
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  background-repeat: none;
+  display: inline-block;
+}
+
+.about-me-text {
+  width: 50%;
+  height: 100%;
+
+  /* Font */
+  color: #555555;
+  font-size: 22px;
+  /*font-size: 1vw;*/
+  font-weight: 600;
+
+  /* Keeps it right of the div */
+  float: right;
+  padding: 20px;
+  /*vertical-align: middle;*/
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me-text h1 {
+  font-weight: bold;
+}
+
+@media all and (max-width: 800px) {
+  .grad-image {
+    background-position: center;
+  }
+}
+
+
+@media all and (max-width: 1300px), all and (max-height: 650px) {
+  .about-me-text {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-height: 620px) {
+  .about-me-text {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 1100px), all and (max-height: 560px) {
+  .about-me-text {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .about-me-text {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-height: 500px) {
+  .about-me-text {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 900px), all and (max-height: 480px) {
+  .about-me-text {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-height: 736px) {
+  .about-me-text {
+    font-size: 14px;
+  }
+}
+
+
+@media all and (max-width: 414px), all and (max-height: 430px) {
+  .about-me-text {
+    font-size: 11px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+}
+
+
+
+@media all and (max-width: 375px) {
+  .about-me-text {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .about-me-text {
+    font-size: 7px;
+    padding: 10px;
+  }
 }

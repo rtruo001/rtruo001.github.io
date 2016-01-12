@@ -1,0 +1,146 @@
+/*  =============================================================================
+    
+    Copyright © Randy Truong
+    ========================================================================== */
+
+/* The nav bar on the side */
+nav {
+  width: auto;
+  height: 100%;
+
+  /* Let nav bar follow the screen */
+  position: fixed;
+
+  /* Font color for nav bar */
+  color: white;
+  font-size: 18px;
+
+  /* Spacing between each dot section within nav bar */
+  padding-left: 50px;
+
+  z-index: 100000;
+
+  /* Keeps the nav section in the center */
+  display: flex;
+  /* Vertically center the nav */
+  align-items: center; 
+}
+
+/* The entire nav dot section */
+.nav-section {
+  
+  /*position: relative;*/
+
+  /* When hovering, changes the cursor to the hand */
+  cursor: pointer; cursor: hand;
+}
+
+/* Each individual dot section including the section name */
+.nav-bullet-section {
+  width: auto;
+  height: auto;
+  opacity: 1.0;
+}
+
+/* Represents the dots in the nav section */
+.nav-dots {
+  width: 9px;
+  height: 9px;
+  background-color: transparent;
+  display: inline-block;
+  border: 1px solid #888888;
+  border-radius: 50px 50px 50px 50px;
+
+  /* Spacing between the dots and the section name */
+  margin-right: 5px;
+}
+
+/* When the nav dots are hovered, change the outline color of the hovered dot */
+.nav-dots:hover, .nav-bullet-section:hover .nav-dots {
+  border-color: white;
+}
+
+/* Initializes the Home dot to be white */
+#dot-1 {
+  background-color: white;
+}
+
+/* =============================================================================
+
+THE BUTTONS FOR NAVIGATING THROUGH PAGES
+
+================================================================================ */
+
+.up-slide-button,
+.down-slide-button,
+.right-slide-button,
+.left-slide-button {
+  width: auto;
+  background-color: transparent;
+  border: none;
+
+  /* The buttons have a default margin/padding to them */
+  margin: 0px;
+  padding: 0px;
+
+  /*font*/
+  font-size: 50px;
+  color: #FFFFFF;
+
+  /*Removes the outline when button is clicked*/
+  outline: none;
+
+  /* Changes cursor when hovering */
+  cursor: pointer; cursor: hand;
+}
+
+body.disable-hover .up-slide-button,
+body.disable-hover .down-slide-button,
+body.disable-hover .right-slide-button,
+body.disable-hover .left-slide-button {
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -0-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.up-slide-button,
+.down-slide-button {
+  width: 100px;
+  position: absolute;
+  z-index: 999999;
+}
+
+.right-slide-button,
+.left-slide-button {
+  padding: 10px;
+  position: absolute;
+  top: 45%;
+  z-index: 999999;
+}
+
+body.disable-hover .up-slide-button:hover,
+body.disable-hover .down-slide-button:hover,
+body.disable-hover .right-slide-button:hover,
+body.disable-hover .left-slide-button:hover {
+  color: #555555;
+}
+
+.up-slide-button {
+  top: 0;
+}
+
+.down-slide-button {
+  bottom: 0;
+}
+
+.right-slide-button {
+  left: auto;
+  right: 0;
+  
+}
+.left-slide-button {
+  left: 0;
+}
+
