@@ -5,6 +5,7 @@
 
 #project-section {
   top: 200%;
+  height: 100vh;
 }
 
 #project-1 {
@@ -48,14 +49,16 @@
 
 .project-text {
   /* Font */
-  color: #555555;
+  color: #333333;
   font-size: 22px;
   /*font-size: 1vw;*/
-  font-weight: 600;
+  font-weight: 500;
 
   /* Keeps it right of the div */
   float: right;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   /*vertical-align: middle;*/
   position: relative;
   top: 50%;
@@ -67,19 +70,51 @@
 }
 
 .project-text h1 {
-  font-size: 40px;
-  font-style: bold;
+  font-size: 32px;
+  font-style: bolder;
+  margin-bottom: 10px;
 }
 
-#project-2 .img-png, #project-3 .img-png {
+#project-1 .img-png, #project-2 .img-png, #project-3 .img-png {
   border-radius: 0px 0px 0px 0px;
 }
 
 .img-png {
-  width: auto;
-  height: 40%;
+  width: 90%;
+  height: 50%;
   margin: 10px;
-  border-radius: 50px 50px 50px 50px;
+  /*border-radius: 50px 50px 50px 50px;*/
+  object-fit: contain;
+}
+
+.hashtags {
+  margin-top: 5px; 
+}
+
+.hash-tags {
+  color: #888888;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  font-weight: bolder;
+
+  border-bottom: 1px solid #999999;
+  display: inline-block;
+}
+
+.download-buttons img {
+  width: 10rem;
+  height: 3rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#project-1 .hash-tags {
+  color: #6A6A6A;
+  border-bottom: 1px solid #6A6A6A;
+
 }
 
 #project-3 .project-text {
@@ -88,16 +123,7 @@
 
 #project-3 .hash-tags {
   color: #DDDDDD;
-}
-
-.hash-tags {
-  color: #777777;
-  margin-right: 10px;
-  padding-right: 5px;
-  padding-left: 5px;
-
-  border-bottom: 1px solid #777777;
-  display: inline-block;
+  border-bottom: 1px solid #DDDDDD;
 }
 
 .hash-tags:hover {
@@ -105,9 +131,19 @@
 }
 
 @media all and (max-width: 1200px) {
+  .project-slide-left-side {
+    width: 100%;
+    height: 50%;
+    float: none;
+  }
+  .project-slide-right-side {
+    width: 100%;
+    height: 50%;
+    float: none;
+  }
   .img-png {
-    width: 80%;
-    height: auto;
+    width: 90%;
+    height: 90%;
   }
 }
 
@@ -120,25 +156,25 @@
     font-size: 18px;
   }
 
-  .img-png {
+/*  .img-png {
     height: 40%;
     width: auto;
     border-radius: 20px 20px 20px 20px;
-  }
+  }*/
 }
 
 @media all and (max-width: 900px) {
-  .img-png {
+/*  .img-png {
     height: auto;
     width: 80%;
-  }
+  }*/
 }
 
 @media all and (max-height: 400px) {
-  .img-png {
+/*  .img-png {
     height: 40%;
     width: auto;
-  }
+  }*/
 }
 
 /* =============================================================================
@@ -153,7 +189,6 @@ THE BUTTONS FOR NAVIGATING THROUGH PROJECTS
 
 /* The entire project dots div */
 .project-dots {
-  width: 100px;
   text-align: center;
   background-color: transparent;
   position: absolute;

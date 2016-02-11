@@ -14,6 +14,15 @@ nav {
   /* Font color for nav bar */
   color: white;
   font-size: 18px;
+  font-weight: bolder;
+
+  /* For the text to be more viewable */
+  /*text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;  */
+  text-shadow: 0px 0px 0px #000000;
 
   /* Spacing between each dot section within nav bar */
   padding-left: 50px;
@@ -26,6 +35,15 @@ nav {
   align-items: center; 
 }
 
+.nav-background {
+  width: 160px;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+  opacity: 0.50;
+  z-index: 100000;
+}
+
 /* The entire nav dot section */
 .nav-section {
   
@@ -33,6 +51,7 @@ nav {
 
   /* When hovering, changes the cursor to the hand */
   cursor: pointer; cursor: hand;
+  z-index: 1000001;
 }
 
 /* Each individual dot section including the section name */
@@ -40,6 +59,7 @@ nav {
   width: auto;
   height: auto;
   opacity: 1.0;
+  padding-right: 10px;
 }
 
 /* Represents the dots in the nav section */
@@ -48,7 +68,7 @@ nav {
   height: 9px;
   background-color: transparent;
   display: inline-block;
-  border: 1px solid #888888;
+  border: 1px solid #BBBBBB;
   border-radius: 50px 50px 50px 50px;
 
   /* Spacing between the dots and the section name */
@@ -84,7 +104,7 @@ THE BUTTONS FOR NAVIGATING THROUGH PAGES
   padding: 0px;
 
   /*font*/
-  font-size: 50px;
+  font-size: 80px;
   color: #FFFFFF;
 
   /*Removes the outline when button is clicked*/
@@ -114,9 +134,9 @@ body.disable-hover .left-slide-button {
 
 .right-slide-button,
 .left-slide-button {
-  padding: 10px;
+  /*height: 200px;*/
+  padding-left: 10px;
   position: absolute;
-  top: 45%;
   z-index: 999999;
 }
 
@@ -125,6 +145,21 @@ body.disable-hover .down-slide-button:hover,
 body.disable-hover .right-slide-button:hover,
 body.disable-hover .left-slide-button:hover {
   color: #555555;
+}
+
+/* Colors of the slide buttons for project 2 */
+#project-2 .up-slide-button,
+#project-2 .down-slide-button,
+#project-2 .right-slide-button,
+#project-2 .left-slide-button {
+  color: black;
+}
+
+#project-2 .up-slide-button:hover,
+#project-2 .down-slide-button:hover,
+#project-2 .right-slide-button:hover,
+#project-2 .left-slide-button:hover{
+  color: #AAAAAA;
 }
 
 .up-slide-button {

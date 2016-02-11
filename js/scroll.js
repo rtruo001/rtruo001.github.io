@@ -309,7 +309,7 @@ function rightSlide() {
   leftAttr = parseInt($('.pages-horizontal').css('left'), 10);
   newRightPos = leftAttr - divWidth;
   // If at the end of the sliding div, move back to the first page
-  if (newRightPos <= (3 * -divWidth)) {
+  if (divWindowPositionX == 0) {
     $('.pages-horizontal').css('left', '0px');
   }
   // Moves to the right page

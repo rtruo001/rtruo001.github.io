@@ -66,16 +66,16 @@ function goToClickedSlide(div) {
 // Changes the color of the text in the nav depending on which background the page is currently at
 // Does this in order to easily see the nav text as pages change
 function checkFontColorInNav() {
-  if (pagesArray[divWindowPositionY][divWindowPositionX] == '#work-experience-section' ||
-      pagesArray[divWindowPositionY][divWindowPositionX] == '#main-splash-screen-section' ||
-      pagesArray[divWindowPositionY][divWindowPositionX] == '#project-1' ||
-      // pagesArray[divWindowPositionY][divWindowPositionX] == '#project-3' ||
-      pagesArray[divWindowPositionY][divWindowPositionX] == '#contact-section') {
-    $('nav').css('color', 'white');  
-  }
-  else {
-    $('nav').css('color', 'black');
-  }
+  // if (pagesArray[divWindowPositionY][divWindowPositionX] == '#work-experience-section' ||
+  //     pagesArray[divWindowPositionY][divWindowPositionX] == '#main-splash-screen-section' ||
+  //     // pagesArray[divWindowPositionY][divWindowPositionX] == '#project-1' ||
+  //     pagesArray[divWindowPositionY][divWindowPositionX] == '#project-3' ||
+  //     pagesArray[divWindowPositionY][divWindowPositionX] == '#contact-section') {
+  //   $('nav').css('color', 'white');  
+  // }
+  // else {
+  //   $('nav').css('color', 'black');
+  // }  
 }
 
 // Change the colors of the dots depending on which dot is moved
@@ -83,3 +83,5 @@ function changeColorOfDotsForNav(dotNum, dotState) {
   var dotChosen = "#dot-" + (dotNum + 1);
   $(dotChosen).css('background-color', dotState);
 }
+
+

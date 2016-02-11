@@ -13,8 +13,10 @@ var pagesArray = new Array(VERTICALNUMBEROFPAGES)
 // The current page the screen is at
 var currPage = $('#main-splash-screen-section');
 
+// When the webpage begins, Start with this function
 $(document).ready(function() {
   console.log("Welcome to my website!");
+  // Defaults scrolls to the first page
   window.scrollTo(0, 0);
   initPagesArray();
   checkScreenSize();
@@ -53,13 +55,12 @@ function initPagesArray() {
 $(window).resize(checkScreenSize);
 
 function checkScreenSize() {
-  // $('#main-splash-screen-section').width($(window).width());
-  // $('#main-splash-screen-section').height($(window).height());
+  // Keeps the pages as same size as the screen
   $('.page').width($(window).width());
   $('.page').height($(window).height());
 
-  // $('#work-experience-section').width($(window).width());
-  // $('#work-experience-section').height($(window).height());
+  // Keeps the nav background same size as the nav
+  $('.nav-background').width($('nav').innerWidth());  
 
   for (var i = 0; i < VERTICALNUMBEROFPAGES; ++i) {
     for (var j = 0; j < HORIZONTALNUMBEROFPAGES; ++j) {
@@ -70,6 +71,7 @@ function checkScreenSize() {
     }
   }
 
+  // Sets the width and hiehgt appropriately for the pages
   $('.pages-vertical').width($(window).width());
   $('.pages-vertical').height($(window).height());
   $('.pages-horizontal').width($(window).width());
@@ -80,11 +82,17 @@ function checkScreenSize() {
   horizontallyCenterInDiv('.up-slide-button');
   horizontallyCenterInDiv('.down-slide-button');
 
+  // Vertically centers specific divs
+  verticallyCenterInDiv('.left-slide-button');
+  verticallyCenterInDiv('.right-slide-button');
+
+  // Adjust the position of the screen to the beginning of the current page
   moveToTopOfCurrentDiv();
 
-  adjustHeights(".about-me-text");
+  // adjustHeights(".about-me-text");
 }
 
+// Adjusts the height and font within the element
 function adjustHeights(elem) {
   var fontstep = 2;
   if ($(elem).height()>$(elem).parent().height() || $(elem).width()>$(elem).parent().width()) {
@@ -93,15 +101,18 @@ function adjustHeights(elem) {
   }
 }
 
+// Centers a div horizontally within a div
 function horizontallyCenterInDiv(divName) {
   $(divName).css('left', (($(window).width() / 2) - ($(divName).width() / 2)) + 'px');
 }
 
+// Centers a div vertically within a div
+function verticallyCenterInDiv(divName) {
+  $(divName).css('top', (($(window).height() / 2) - ($(divName).height() / 2)) + 'px');
+}
+
+// Adjust the position of the screen to the beginning of the current page
 function moveToTopOfCurrentDiv() {
-// $.scrollTo($(pagesArray[divWindowPositionY][divWindowPositionX]), 0);
-  // $(window).scrollTop($(pagesArray[divWindowPositionY][divWindowPositionX]).offsetHeight);
-
-
   var positionOfCurrDiv = $(pagesArray[divWindowPositionY][divWindowPositionX]).offset()
   var divTop = parseInt(positionOfCurrDiv.top, 10);
   var divLeft = parseInt(positionOfCurrDiv.left, 10);
@@ -117,21 +128,5 @@ function moveToTopOfCurrentDiv() {
     var leftAttr = parseInt($('.pages-horizontal').css('left'), 10) - divLeft;
     $('.pages-horizontal').css('left', leftAttr + 'px')
   }
-
-  // $('html, body').animate({
-  //   scrollTop: positionOfCurrDiv.top
-  // }, 0);
-
-  // // for (var i = 0; i < divWindowPositionY; ++i) {
-  // //   totalHeightToMove += $(window).height();
-  // // }
-
-  // var totalHeightToMove = 0;
-
-  // for (var i = 0; i < divWindowPositionY; ++i) {
-  //   totalHeightToMove += $(window).height();
-  // }
-  // console.log(totalHeightToMove);
-  // window.scrollTo(0, 0);
 }
 

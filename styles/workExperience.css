@@ -8,15 +8,15 @@
 
   background-color: #F2F2FF;
   max-width: 100%;
-  height: auto;
+  height: 100vh;
 }
 
 .grad-image {
   width: 50%;
   height: 100%;
   background-image: url("../img/gradPose-min.jpg");
-  /*background-attachment: fixed;*/
   background-size: cover;
+  background-position: center top;
   background-repeat: none;
   display: inline-block;
 }
@@ -48,12 +48,6 @@
   font-weight: bold;
 }
 
-@media all and (max-width: 800px) {
-  .grad-image {
-    background-position: center;
-  }
-}
-
 
 @media all and (max-width: 1300px), all and (max-height: 650px) {
   .about-me-text {
@@ -75,7 +69,11 @@
 
 @media all and (max-width: 1000px) {
   .about-me-text {
-    font-size: 15px;
+    font-size: 18px;
+  }
+
+ .grad-image {
+    background-position: center;
   }
 }
 

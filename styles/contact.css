@@ -16,13 +16,17 @@
 }
 
 .contact-email {
-  color: #CCCCCC;
+  color: #BBBBBB;
   font-size: 24px;
   margin: 20px;
 }
 
-.email-actual-text {
+.email-actual-text:hover {
   color: white;
+}
+
+.email-actual-text {
+  color: #DDDDDD;
   font-weight: 900;
   display: inline-block;
   border-bottom: 1px solid white;
