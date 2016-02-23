@@ -15,7 +15,7 @@
 
   <title>Randy's Website</title>
   <!-- Tab icon -->
-  <link rel="shortcut icon" href="img/vo_logo3.ico">
+  <link rel="shortcut icon" href="img/vo_logo3.ico" type="image/x-icon"/>
 
   <!-- Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
@@ -84,8 +84,16 @@
 
         Please take a look around my personal website made with basic HTML/CSS/Javascript. I hope you enjoy what you see as much as I enjoy building this website! -->
 
-        I am a recent Summer 2015 graduate of Universtiy of California Riverside.  After graduating, I gave myself six months in doing anything I felt was worth doing. I began post-grad in co-founding Vent Origins, a group dedicated in making a wide variety of applications. I gained incredible insight in working with others, managing my time, learning both front and back end in developing applications, and especially having the persistance and motivation to even do this in the first place. Now that these six months are over, I am ready to move onto new and better things.  Therefore I am currently looking for a full-time/internship position as a Software Engineer.
+        I am a recent Summer 2015 graduate of Universtiy of California Riverside.  After graduating, I gave myself six months in doing anything I felt was worth doing. I began post-grad in co-founding Vent Origins, a group dedicated in making a wide variety of applications. I gained incredible insight in working with others, managing my time, learning both front and back end in developing applications, and especially having the persistence and motivation to even do this in the first place. Now that these six months are over, I am ready to move onto new and better things.  Therefore I am currently looking for a full-time/internship position as a Software Engineer. <br>
 
+        <div class='about-me-resume'>
+          <!-- <button class='open-resume' onclick='openMyResume()'>Resume</button>
+          <div class='pdf-resume'>
+            <iframe class='actual-resume' src="img/ResumeAboutMe.pdf"></iframe>
+          </div> -->
+          <a class='actual-resume' href="img/ResumeAboutMe.pdf" target="_blank">Resume: <i class="fa fa-files-o"></i></a>
+          <a class='vent-origins-link' href="http://www.ventorigins.com" target="_blank">VentOrigins: <img src='img/vo_logo3.png'</i></a>
+        </div>
       </div>
     </div>
     
@@ -102,6 +110,12 @@
         </div>
         <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-3")'>
           <div class='project-dot' id='project-dot-3'></div>
+        </div>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-4")'>
+          <div class='project-dot' id='project-dot-4'></div>
+        </div>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-5")'>
+          <div class='project-dot' id='project-dot-5'></div>
         </div>
       </div>
 
@@ -133,7 +147,7 @@
               <div class='download-buttons'>
                 <a href='https://itunes.apple.com/bt/app/sir-prance/id1065679062?mt=8' target="_blank"><img class='download-button-img' src='img/Download_on_the_App_Store_Badge.svg.png'></a>
                 <a href='https://play.google.com/store/apps/details?id=com.Mandee.Charger&hl=en' target="_blank"><img class='download-button-img' src='img/Android-app-on-google-play.svg.png'></a>
-            </div>
+              </div>
             </div>
           </div>
         </div>
@@ -161,6 +175,11 @@
                 <div class='hash-tags'>SoundCloud API</div>
                 <div class='hash-tags'>Materialize CSS</div>
               </div>
+
+              <div class='project-links'>
+                <div class='project-url-link'><a href='http://ventdj.com' target="_blank"> <i class="fa fa-link"></i> </a></div>
+                <div class='project-github-link'><a href='https://github.com/VentOrigins/VentDJ' target="_blank"> <i class="fa fa-code-fork"></i> </a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -185,6 +204,70 @@
                 <div class='hash-tags'>JQuery</div>
                 <div class='hash-tags'>Spotify API</div>
                 <div class='hash-tags'>Parse</div>
+              </div>
+
+              <div class='project-links'>
+                <div class='project-url-link'><a href='http://ventorigins.github.io' target="_blank"> <i class="fa fa-link"></i> </a></div>
+                <div class='project-github-link'><a href='https://github.com/VentOrigins/SpotifyTag' target="_blank"> <i class="fa fa-code-fork"></i> </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='page' id='project-4'>
+          <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+          <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
+          <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
+          
+          <div class='project-slide-left-side'>
+            <img class='img-png' src='img/RCart.png'>
+          </div>
+          <div class='project-slide-right-side'>
+            <div class='project-text'>
+              <h1>R'Cart</h1>
+              is an Android application and project of UCR's Software Engineering class. Working in a small team to emulate a company-like scenario, we designed an application that has similar features to GasBuddy (Finding cheap gases in the world). We had to extend the functionalities to have shopping products as well. We used several API's including the Gas Feed API which gave prices all over America, the Mashery API which gave prices of products from everyday shopping stores, and the Google Maps/Places API for routing to these locations.
+
+              <div class='hashtags'>
+                <div class='hash-tags'>Android</div> 
+                <div class='hash-tags'>Java</div>
+                <div class='hash-tags'>Gas Feed API</div>
+                <div class='hash-tags'>Mashery API</div>
+                <div class='hash-tags'>Google's API</div>
+              </div>
+
+              <div class='project-links'>
+                <div class='project-github-link'><a href='https://github.com/rtruo001/RCart' target="_blank"> <i class="fa fa-code-fork"></i> </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <div class='page' id='project-5'>
+          <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+          <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
+          <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
+          
+          <div class='project-slide-left-side'>
+            <img class='img-png' src='img/NESemulator-min.png'>
+          </div>
+          <div class='project-slide-right-side'>
+            <div class='project-text'>
+              <h1>NES Emulator</h1>
+              As part of my Senior Design class in summer study abroad course in Lausanne, Switzerland, worked as a group to tackle something that dealt with both hardware and software interfacing. What better way to explore FPGAs with writing an entire NES emulator from scratch! To put it into perspective, what took years for Nintendo to do, we had to do with a team of 5 in a given school quarter.
+
+              <div class='hashtags'>
+                <div class='hash-tags'>FPGA</div> 
+                <div class='hash-tags'>Embedded Systems</div> 
+                <div class='hash-tags'>C</div>
+                <div class='hash-tags'>VHDL</div>
+                <div class='hash-tags'>Verilog</div>
+                <div class='hash-tags'>Hardware</div>
+              </div>
+
+              <div class='project-links'>
+                <div class='project-github-link'><a href='https://github.com/UCR-CS179-SUMMER2014/NES_FPGA' target="_blank"> <i class="fa fa-code-fork"></i> </a></div>
               </div>
             </div>
           </div>
@@ -218,6 +301,7 @@
   <script type='text/javascript' src='js/jquery-2.2.0.min.js'></script>
 
   <!-- Scripts -->
+  <script type="text/javascript" src="js/about.js"></script>
   <script type="text/javascript" src="js/webpage.js"></script>
   <script type="text/javascript" src="js/scroll.js"></script>
   <script type="text/javascript" src="js/nav.js"></script>

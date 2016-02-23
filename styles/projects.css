@@ -23,6 +23,16 @@
   background-color: #71B533;
 }
 
+#project-4 {
+  left: 300%;
+  background-color: #E3E3FF;
+}
+
+#project-5 {
+  left: 400%;
+  background-color: #000000;
+}
+
 /* Each project slide has a left side and a right side*/
 /* The left side will consist of images */
 .project-slide-left-side {
@@ -111,19 +121,61 @@
   cursor: pointer;
 }
 
+.project-links {
+  display: inherit;
+  margin-top: 20px;
+}
+
+.project-links .fa {
+  color: #777777;
+  font-size: 36px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.project-links .fa:hover {
+  color: #000000;
+}
+
+.project-url-link {
+  padding-top: 2px;
+}
+
+.project-url-link .fa {
+  font-size: 35px;
+}
+
+.project-github-link {
+
+}
+
 #project-1 .hash-tags {
   color: #6A6A6A;
   border-bottom: 1px solid #6A6A6A;
 
 }
 
-#project-3 .project-text {
+#project-3 .project-text{
   color: #FFFFFF;
+}
+
+#project-3 .project-links .fa {
+  color: #DDDDDD;
 }
 
 #project-3 .hash-tags {
   color: #DDDDDD;
   border-bottom: 1px solid #DDDDDD;
+}
+
+#project-5 .project-text {
+  color: #FFFFFF;
+}
+
+#project-5 .project-links .fa {
+  color: #888888;
+}
+#project-3 .project-links .fa:hover, #project-5 .project-links .fa:hover {
+  color: #FFFFFF;
 }
 
 .hash-tags:hover {
@@ -147,34 +199,18 @@
   }
 }
 
-@media all and (max-height: 700px), all and (max-width: 600px) {
+@media all and (max-width: 800px), all and (max-height: 800px) {
   .project-text {
     font-size: 14px;
+  }
+
+  .project-links .fa {
+    font-size: 26px;
   }
 
   .project-text h1 {
     font-size: 18px;
   }
-
-/*  .img-png {
-    height: 40%;
-    width: auto;
-    border-radius: 20px 20px 20px 20px;
-  }*/
-}
-
-@media all and (max-width: 900px) {
-/*  .img-png {
-    height: auto;
-    width: 80%;
-  }*/
-}
-
-@media all and (max-height: 400px) {
-/*  .img-png {
-    height: 40%;
-    width: auto;
-  }*/
 }
 
 /* =============================================================================

@@ -5,7 +5,7 @@
 
 // CONSTANTS
 var VERTICALNUMBEROFPAGES = 4;
-var HORIZONTALNUMBEROFPAGES = 3;
+var HORIZONTALNUMBEROFPAGES = 5;
 
 // 2D Array of all the pages formatted in their correct order
 var pagesArray = new Array(VERTICALNUMBEROFPAGES)
@@ -34,21 +34,31 @@ function initPagesArray() {
   pagesArray[0][0] = '#main-splash-screen-section';
   pagesArray[0][1] = '#main-splash-screen-section';
   pagesArray[0][2] = '#main-splash-screen-section';
+  pagesArray[0][3] = '#main-splash-screen-section';
+  pagesArray[0][4] = '#main-splash-screen-section';
+
 
   // Second page
   pagesArray[1][0] = '#work-experience-section';
   pagesArray[1][1] = '#work-experience-section';
   pagesArray[1][2] = '#work-experience-section';
+  pagesArray[1][3] = '#work-experience-section';
+  pagesArray[1][4] = '#work-experience-section';
+
   
   // Third row of pages
   pagesArray[2][0] = '#project-1';
   pagesArray[2][1] = '#project-2';
   pagesArray[2][2] = '#project-3';
+  pagesArray[2][3] = '#project-4';
+  pagesArray[2][4] = '#project-5';
 
   // Fourth page
   pagesArray[3][0] = '#contact-section';
   pagesArray[3][1] = '#contact-section';
   pagesArray[3][2] = '#contact-section';
+  pagesArray[3][3] = '#contact-section';
+  pagesArray[3][4] = '#contact-section';
 }
 
 // Used for when the screen is resized

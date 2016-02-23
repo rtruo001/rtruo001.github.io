@@ -14,6 +14,8 @@ function goToProjectClickedSlide(divId) {
     $('#project-dot-1').css('background-color', 'white');
     $('#project-dot-2').css('background-color', 'transparent');
     $('#project-dot-3').css('background-color', 'transparent');
+    $('#project-dot-4').css('background-color', 'transparent');
+    $('#project-dot-5').css('background-color', 'transparent');
     if (divWindowPositionX == 0) {
       ifScrollTransitioning = false;
       reenableButtonAnimations();
@@ -25,6 +27,8 @@ function goToProjectClickedSlide(divId) {
     $('#project-dot-1').css('background-color', 'transparent');
     $('#project-dot-2').css('background-color', 'white');
     $('#project-dot-3').css('background-color', 'transparent');
+    $('#project-dot-4').css('background-color', 'transparent');
+    $('#project-dot-5').css('background-color', 'transparent');
     if (divWindowPositionX == 1) {
       ifScrollTransitioning = false;
       reenableButtonAnimations();  
@@ -36,11 +40,39 @@ function goToProjectClickedSlide(divId) {
     $('#project-dot-1').css('background-color', 'transparent');
     $('#project-dot-2').css('background-color', 'transparent');
     $('#project-dot-3').css('background-color', 'white');
+    $('#project-dot-4').css('background-color', 'transparent');
+    $('#project-dot-5').css('background-color', 'transparent');
     if (divWindowPositionX == 2) {
       ifScrollTransitioning = false;
       reenableButtonAnimations();
     }
     divWindowPositionX = 2;
+  }
+  else if (divId == 'project-dot-4') {
+    $('.pages-horizontal').css('left', (3 * -screenWidth) + 'px');
+    $('#project-dot-1').css('background-color', 'transparent');
+    $('#project-dot-2').css('background-color', 'transparent');
+    $('#project-dot-3').css('background-color', 'transparent');
+    $('#project-dot-4').css('background-color', 'white');
+    $('#project-dot-5').css('background-color', 'transparent');
+    if (divWindowPositionX == 3) {
+      ifScrollTransitioning = false;
+      reenableButtonAnimations();
+    }
+    divWindowPositionX = 3;
+  }
+  else if (divId == 'project-dot-5') {
+    $('.pages-horizontal').css('left', (4 * -screenWidth) + 'px');
+    $('#project-dot-1').css('background-color', 'transparent');
+    $('#project-dot-2').css('background-color', 'transparent');
+    $('#project-dot-3').css('background-color', 'transparent');
+    $('#project-dot-4').css('background-color', 'transparent');
+    $('#project-dot-5').css('background-color', 'white');
+    if (divWindowPositionX == 4) {
+      ifScrollTransitioning = false;
+      reenableButtonAnimations();
+    }
+    divWindowPositionX = 4;
   }
   // Changes the nav font colors depending on the background
   checkFontColorInNav();

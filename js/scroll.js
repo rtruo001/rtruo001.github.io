@@ -272,7 +272,7 @@ function leftSlide() {
   leftAttr = parseInt($('.pages-horizontal').css('left'), 10);
   newLeftPos = leftAttr + divWidth
   if (newLeftPos >= (divWidth)) {
-    $('.pages-horizontal').css('left', 2 * -divWidth + 'px');
+    $('.pages-horizontal').css('left', 4 * -divWidth + 'px');
   }
   else {
     $('.pages-horizontal').css('left', newLeftPos + 'px')

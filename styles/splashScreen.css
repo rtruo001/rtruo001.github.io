@@ -10,7 +10,8 @@
   background-image: url("../img/mountainPose-min.jpg");
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
+  background-position: center top;
 
   position: relative;
   height: 100vh;

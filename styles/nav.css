@@ -179,3 +179,8 @@ body.disable-hover .left-slide-button:hover {
   left: 0;
 }
 
+@media screen and (max-width: 996px) {
+  .nav-background {
+    width: 80px;
+  } 
+}
