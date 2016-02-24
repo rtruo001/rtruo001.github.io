@@ -64,16 +64,24 @@ body {
   
 }
 
+span.text-hashtag {
+  font-weight: 100;
+  font-family: 'Helvitica', sans-serif;
+  display: inline;
+  float: left;
+}
+
+p {
+  margin-top: 5px; 
+  margin-bottom: 5px;
+  display: inline;
+}
+
 /* Needed for the width to also including border and padding sizes */
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-}
-
-a {
-  width: auto;
-  height: auto;
 }
 
 
