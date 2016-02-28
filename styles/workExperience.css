@@ -62,17 +62,21 @@
 .about-me-resume {
   /*font-weight: bold;*/
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .about-me-resume a {
   text-decoration: none;
-  color: #0000AA;
+  color: #777777;
   margin-right: 50px;
+
+  background-color: #EEEEEE;
+  border: 1px solid black;
+  padding: 10px;
 }
 
 .about-me-resume a:hover {
-  border-bottom: 1px solid #0000AA;
+  background-color: #DDDDDD;
 }
 
 .about-me-resume .fa {
