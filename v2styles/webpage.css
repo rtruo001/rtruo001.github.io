@@ -1,0 +1,188 @@
+body {
+  height: 100%;
+
+  margin: 0px;
+  padding: 0px;
+
+  font-family: 'Quicksand', sans-serif;
+
+  font-size: 18px; 
+
+  background-color: #FFFFFF;
+}
+
+h1 {
+	margin-top: 0px;
+	font-size: 40px;
+}
+
+header {
+	height: 80px;
+	box-shadow: 0px 0px 1px black;
+}
+
+#splash-section {
+	margin-top: 70px;
+	padding-bottom: 120px;
+	border-bottom: 1px solid black;	
+}
+
+#title-name {
+	padding-top: 100px;
+	font-size: 50px;
+}
+
+#project-name {
+	margin-top: 20px;
+	font-size: 50px;	
+}
+
+#my-picture {
+/*  	background-image: url("../img/gradPose-min.jpg");
+	background-size: 400px;
+	background-repeat: no-repeat;
+	background-position: center top;*/
+	/*border-radius: 50% 50% 50% 50%;*/
+	width: 100%;
+	border-radius: 5px;
+	padding: 1px;
+	background-color: #AAAAAA;
+}
+
+#contact {
+	font: 25px;
+	border-top: 1px solid #777777; 
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.project {
+/*	margin-top: 50px;
+	margin-bottom: 100px;*/
+	padding: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	background-color: white;
+}
+
+#apple-tea {
+	height: 500px;
+	color: white;
+	font-size: 70px;
+	background-color: black;
+	padding-top: 200px;
+	border-radius: 5px;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.project-img {
+	width: 100%;
+	border-radius: 5px;
+	padding: 1px;
+	background-color: #AAAAAA;
+}
+
+.hashtags {
+  margin-top: 5px; 
+}
+
+.hash-tags {
+  color: #888888;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  font-weight: bolder;
+
+  border-bottom: 1px solid #999999;
+  display: inline-block;
+}
+
+.download-buttons img {
+  width: auto;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.project-links {
+  display: inherit;
+  margin-top: 20px;
+}
+
+.project-links .fa {
+  color: #777777;
+  font-size: 36px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.project-links .fa:hover {
+  color: #000000;
+}
+
+.project-github-link {
+	display: inline-block;	
+}
+
+.previous-versions {
+	display: inline-block;	
+}
+
+.previous-versions-text {
+	color: #777777;
+	font-size: 36px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.previous-versions-text:hover {
+	color: #777777;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+#project1 {
+	background-color: #FFAAAA;
+}
+
+#project2 {
+	background-color: #FAFAFA;
+}
+
+#project3 {
+	background-color: #71B533;
+	color: white;
+}
+#project3 .hash-tags {
+	color: white;
+}
+#project3 .fa:hover {
+	color: #222222;
+}
+
+#project4 {
+	background-color: #EEEEFF;
+}
+
+#project5 {
+	background-color: #000000;
+	color: white;
+}
+#project5 .hash-tags {
+	color: white;
+}
+#project5 .fa:hover {
+	color: #555555;
+}
+
+

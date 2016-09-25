@@ -1,0 +1,341 @@
+<!--
+/*  =============================================================================
+    
+    Copyright © Randy Truong
+    ========================================================================== */
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <!-- <meta name="viewport" content="width=device-width" /> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>Randy's Website</title>
+  <!-- Tab icon -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="/vo_logo3.ico?"> -->
+  <link rel="shortcut icon" type="image/png" href="img/vo_logo3.ico?">
+
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+  
+  <!-- Font Awesome / Icons -->
+  <script src="https://use.fontawesome.com/ff2a651ae4.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/webpage.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/splashScreen.css">
+  <link rel="stylesheet" href="styles/workExperience.css">
+  <link rel="stylesheet" href="styles/projects.css">
+  <link rel="stylesheet" href="styles/contact.css">
+
+</head>
+
+<body class='disable-hover'>
+
+  <!-- Nav section which contains each page's section -->
+  <!-- This div section is needed because the text for some reason goes with the opacity of the nav, 
+  With this, the text would still remain with no transparency -->
+  <div class='nav-background'></div>
+  <nav>
+    <div class='nav-section'>
+      <div class='nav-bullet-section' id='dot-slide-1' onclick='goToClickedSlide(this)'>
+        <div class='nav-dots' id='dot-1'></div>
+        Home
+      </div>
+
+      <div class='nav-bullet-section' id='dot-slide-2' onclick='goToClickedSlide(this)'>
+        <div class='nav-dots' id='dot-2'></div>
+        About Me
+      </div>
+
+      <div class='nav-bullet-section' id='dot-slide-3' onclick='goToClickedSlide(this)'>
+        <div class='nav-dots' id='dot-3'></div>
+        Projects
+      </div>
+
+      <div class='nav-bullet-section' id='dot-slide-4' onclick='goToClickedSlide(this)'>
+        <div class='nav-dots' id='dot-4'></div>
+        Contact
+      </div>
+    </div>
+  </nav>
+
+  <!-- The actual VERTICAL pages -->
+  <div class='pages-vertical'>
+    <!-- The main Home section -->
+    <div class='page' id='main-splash-screen-section' >
+      <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+      <div id='my-name-splash-screen'>Randy Truong</div>
+    </div>
+    
+    <!-- Work experience section -->
+    <div class='page' id='work-experience-section'>
+      <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+      <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+      <!-- <img src="img/gradPose-min.jpg" class='grad-image'> -->
+      <div class='grad-image'></div>
+      <div class='about-me-text' class='text-container'>
+        <h1>Hello! I'm Randy Truong.</h1>
+    
+        <!-- I have been coding nearly 7 years of my life, beginning of my high school junior year. When I finally reached my undergraduate years, I decided to pursue Computer Science as my field of study. Four years later, I am now a recent Summer 2015 graduate of Universtiy of California Riverside.  After graduating, I gave myself the next six months in doing whatever I wanted to do. I began post-grad in co-founding Vent Origins, a group dedicated in building applications with the goal in eventually making the world a better place. After these six months, I gained incredible insight of working with others, managing my time, learning the both the front end and back end in developing applications, and especially having the persistance and motivation to even do this in the first place. I really do consider myself to be a full stack developer, and I will continue to work and improve on my skills. Now that these six months are over, I am ready to move onto new and better things.  Therefore I am currently looking for a full-time/internship position as a Software Engineer. <br> <br>
+
+        Please take a look around my personal website made with basic HTML/CSS/Javascript. I hope you enjoy what you see as much as I enjoy building this website! -->
+
+        <!-- I am a recent Summer 2015 graduate of University of California Riverside.  After graduating, I gave myself six months in doing anything I felt was worth doing. I began post-grad in co-founding Vent Origins, a group dedicated in making a wide variety of applications. I gained incredible insight in working with others, managing my time, learning both front and back end in developing applications, and especially having the persistence and motivation to even do this in the first place. Now that these six months are over, I am ready to move onto new and better things.  Therefore I am currently looking for a full-time/internship position as a Software Engineer. <br> -->
+
+        <div class='hashtags'>
+          <div class='hash-tags'>Software Development</div> 
+          <div class='hash-tags'>OOP</div> 
+          <div class='hash-tags'>React</div> 
+          <div class='hash-tags'>Flux</div>
+          <div class='hash-tags'>NodeJS</div>
+          <div class='hash-tags'>Express</div>
+          <div class='hash-tags'>MongoDB</div>
+          <div class='hash-tags'>Isomorphism</div> 
+          <div class='hash-tags'>SocketIO</div>
+          <div class='hash-tags'>Browserify</div>
+          <div class='hash-tags'>PassportJS</div>
+          <div class='hash-tags'>Javascript</div>
+          <div class='hash-tags'>Git</div>
+          <div class='hash-tags'>ZenHub</div>
+          <div class='hash-tags'>Agile</div>
+          <div class='hash-tags'>IOS</div> 
+          <div class='hash-tags'>Swift</div> 
+          <div class='hash-tags'>Android</div> 
+          <div class='hash-tags'>Java</div> 
+          <div class='hash-tags'>Embedded Systems</div> 
+          <div class='hash-tags'>C++</div> 
+          <div class='hash-tags'>C</div> 
+          <div class='hash-tags'>Linux</div> 
+          <div class='hash-tags'>Bash</div> 
+          <div class='hash-tags'>Algorithms</div> 
+          <div class='hash-tags'>Full Stack</div>
+          <div class='hash-tags'>APIs</div> 
+        </div>
+
+        <div class='about-me-resume'>
+          <!-- <button class='open-resume' onclick='openMyResume()'>Resume</button>
+          <div class='pdf-resume'>
+            <iframe class='actual-resume' src="img/ResumeAboutMe.pdf"></iframe>
+          </div> -->
+          <a class='actual-resume' href="img/Resume9-19-16-nonumber.pdf" target="_blank">Resume</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Projects section, with horizontal pages, each page represents a project -->
+    <div class='page' id='project-section'>
+
+      <!-- The project nav section -->
+      <div class='project-dots'>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-1")'>
+          <div class='project-dot' id='project-dot-1'></div>
+        </div>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-2")'>
+          <div class='project-dot' id='project-dot-2'></div>
+        </div>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-3")'>
+          <div class='project-dot' id='project-dot-3'></div>
+        </div>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-4")'>
+          <div class='project-dot' id='project-dot-4'></div>
+        </div>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-5")'>
+          <div class='project-dot' id='project-dot-5'></div>
+        </div>
+      </div>
+
+      <!-- Project HORIZONTAL pages -->
+      <div class='pages-horizontal'>
+        <div class='page' id='project-1'>
+          <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+          <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
+          <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
+          
+          <div class='project-slide-left-side'>
+            <img class='img-png' src='img/SirPranceBanner.jpg'>
+          </div>
+
+          <div class='project-slide-right-side'>
+            <div class='project-text'>
+              <h1>Sir Prance</h1>
+
+              is a mobile game built on both the Android and IOS devices. Implementation uses concepts of Object Oriented Programming, timer callbacks (State machines), animations, view controllers, and etc. We went through the entire process from downloading Android Studios and XCode to uploading the game onto the app stores. Check out Sir Prance on your device's app store. Download and play!
+
+              <div class='hashtags'>
+                <div class='hash-tags'>Swift 2</div> 
+                <div class='hash-tags'>Java</div>
+                <div class='hash-tags'>IOS</div>
+                <div class='hash-tags'>Android</div>
+              </div>
+
+              <div class='download-buttons'>
+                <a href='https://itunes.apple.com/us/app/sir-prance/id1065679062?mt=8' target="_blank"><img class='download-button-img' src='img/Download_on_the_App_Store_Badge.svg.png'></a>
+                <a href='https://play.google.com/store/apps/details?id=com.Mandee.Charger&hl=en' target="_blank"><img class='download-button-img' src='img/Android-app-on-google-play.svg.png'></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class='page' id='project-2'>
+          <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+          <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
+          <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
+          
+          <div class='project-slide-left-side'>
+            <img class='img-png' src='img/ventdj-min.png'>
+          </div>
+
+          <div class='project-slide-right-side'>
+            <div class='project-text'>
+              <h1>Vent DJ</h1>
+              is an innovative way to listen to music, allowing you to create a playlist that consists of Youtube videos and SoundCloud tracks. Start your search with your favorite songs. Add them to your queue by clicking the title, and enjoy your newly generated playlist. Vent DJ incorporates different methods in playing the queue depending if the shuffle or loop is on.
+
+              <div class='hashtags'>
+                <div class='hash-tags'>HTML/CSS</div> 
+                <div class='hash-tags'>Javascript</div>
+                <div class='hash-tags'>JQuery</div>
+                <div class='hash-tags'>Youtube API</div>
+                <div class='hash-tags'>SoundCloud API</div>
+                <div class='hash-tags'>Materialize CSS</div>
+              </div>
+
+              <div class='project-links'>
+                <div class='project-github-link'><a href='https://github.com/VentOrigins/VentDJ' target="_blank"> <i class="fa fa-code-fork"></i> </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class='page' id='project-3'>
+          <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+          <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
+          <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
+          
+          <div class='project-slide-left-side'>
+            <img class='img-png' src='img/VentTag.png'>
+          </div>
+          <div class='project-slide-right-side'>
+            <div class='project-text'>
+              <h1>Vent Tag</h1>
+              <p>builds upon Spotify, allowing users to add hashtags to songs on Spotify. Using Spotify's API, we acquired user's playlists and tracks to be displayed. Users can add hashtags to any given song. Afterwards, input a <span class='text-hashtag'>&nbsp;"&#35;"&nbsp;</span> and the hashtag query on the search bar, generating a playlist on Spotify with the songs that contain the hashtags. This makes new ways to store and share music. Vent Tag uses Parse to store the datas. Each hashtag is unique to the users who logged in. This was the first project Vent Origins worked on and was not the last.
+              </p>
+              <div class='hashtags'>
+                <div class='hash-tags'>HTML/CSS</div> 
+                <div class='hash-tags'>Javascript</div>
+                <div class='hash-tags'>JQuery</div>
+                <div class='hash-tags'>Spotify API</div>
+                <div class='hash-tags'>Parse</div>
+              </div>
+
+              <div class='project-links'>
+                <div class='project-github-link'><a href='https://github.com/VentOrigins/SpotifyTag' target="_blank"> <i class="fa fa-code-fork"></i> </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='page' id='project-4'>
+          <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+          <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
+          <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
+          
+          <div class='project-slide-left-side'>
+            <img class='img-png' src='img/RCart.png'>
+          </div>
+          <div class='project-slide-right-side'>
+            <div class='project-text'>
+              <h1>R'Cart</h1>
+              is an Android application and project of UCR's Software Engineering course. Working in a small team to emulate a company-like scenario, we designed an application that has similar features to GasBuddy (Finding cheap gases in the world). We had to extend the functionalities to also include shopping products as well. We used several API's including the Gas Feed API which gave prices all over America, the Mashery API which gave prices of products from everyday shopping stores, and the Google Maps/Places API for routing to these locations.
+
+              <div class='hashtags'>
+                <div class='hash-tags'>Android</div> 
+                <div class='hash-tags'>Java</div>
+                <div class='hash-tags'>Gas Feed API</div>
+                <div class='hash-tags'>Mashery API</div>
+                <div class='hash-tags'>Google's API</div>
+              </div>
+
+              <div class='project-links'>
+                <div class='project-github-link'><a href='https://github.com/rtruo001/RCart' target="_blank"> <i class="fa fa-code-fork"></i> </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <div class='page' id='project-5'>
+          <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+          <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
+          <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
+          
+          <div class='project-slide-left-side'>
+            <img class='img-png' src='img/NESemulator-min.png'>
+          </div>
+          <div class='project-slide-right-side'>
+            <div class='project-text'>
+              <h1>NES Emulator</h1>
+              As part of my Senior Design course, which was done as a summer study abroad course in Lausanne Switzerland, we worked as a group to tackle something that dealt with both hardware and software. What better way to explore FPGAs with writing an entire NES emulator from scratch! To put it into perspective, what took years for Nintendo to do, we had to do with a team of 5 in a given school quarter.
+
+              <div class='hashtags'>
+                <div class='hash-tags'>FPGA</div> 
+                <div class='hash-tags'>Embedded Systems</div> 
+                <div class='hash-tags'>C</div>
+                <div class='hash-tags'>VHDL</div>
+                <div class='hash-tags'>Verilog</div>
+                <div class='hash-tags'>Hardware</div>
+              </div>
+
+              <div class='project-links'>
+                <div class='project-github-link'><a href='https://github.com/UCR-CS179-SUMMER2014/NES_FPGA' target="_blank"> <i class="fa fa-code-fork"></i> </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <!-- My contact section -->
+    <div class='page' id='contact-section'>
+      <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+
+      <div class='contact-email'>
+        Get to know me!
+      </div>
+      <div class='icons-section'>
+        <!-- <div class='icon-individual-div'> <a href="http://www.facebook.com/MeSoRandeee" target="_blank"> <i class="fa fa-facebook"></i></a></div>
+        <div class='icon-individual-div'> <a href="http://www.twitter.com/MeSoRandeee" target="_blank"> <i class="fa fa-twitter"></i></a></div> -->
+        <div class='icon-individual-div'> <a href="https://github.com/rtruo001" target="_blank"> <i class="fa fa-github"></i></a></div>
+        <div class='icon-individual-div'> <a href="https://www.linkedin.com/in/randytruong" target="_blank"> <i class="fa fa-linkedin"></i></a></div>
+        <div class='icon-individual-div'> <a href="http://www.instagram.com/MeSoRandeee" target="_blank"> <i class="fa fa-instagram"></i></a></div>
+      </div>
+      <div class='contact-email'>
+        Contact me at <a href="mailto:randtru@gmail.com"><div class='email-actual-text'>randtru@gmail.com</div></a>
+      </div> 
+      <div class='copyright-footer'> © 2016 Copyright Randy Truong</div>
+    </div>
+  </div>
+
+  <!-- JQUERY -->
+  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+  <script type='text/javascript' src='js/jquery-2.2.0.min.js'></script>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/about.js"></script>
+  <script type="text/javascript" src="js/webpage.js"></script>
+  <script type="text/javascript" src="js/scroll.js"></script>
+  <script type="text/javascript" src="js/nav.js"></script>
+  <script type="text/javascript" src="js/projects.js"></script>
+</body>
