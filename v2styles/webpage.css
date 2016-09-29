@@ -152,37 +152,37 @@ header {
 }
 
 #project1 {
-	background-color: #FFAAAA;
+	/*background-color: #FFAAAA;*/
 }
 
 #project2 {
-	background-color: #FAFAFA;
+	/*background-color: #FAFAFA;*/
 }
 
 #project3 {
-	background-color: #71B533;
-	color: white;
+	/*background-color: #71B533;
+	color: white;*/
 }
 #project3 .hash-tags {
-	color: white;
+	/*color: white;*/
 }
 #project3 .fa:hover {
-	color: #222222;
+	/*color: #222222;*/
 }
 
 #project4 {
-	background-color: #EEEEFF;
+	/*background-color: #EEEEFF;*/
 }
 
 #project5 {
-	background-color: #000000;
-	color: white;
+	/*background-color: #000000;*/
+	/*color: white;*/
 }
 #project5 .hash-tags {
-	color: white;
+	/*color: white;*/
 }
 #project5 .fa:hover {
-	color: #555555;
+	/*color: #555555;*/
 }
 
 
