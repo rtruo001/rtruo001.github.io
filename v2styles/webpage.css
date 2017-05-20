@@ -16,15 +16,28 @@ h1 {
 	font-size: 40px;
 }
 
+h2 {
+	font-weight: bold;
+}
+
 header {
 	height: 80px;
 	box-shadow: 0px 0px 1px black;
 }
 
 #splash-section {
-	margin-top: 70px;
-	padding-bottom: 120px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding-bottom: 150px;
 	border-bottom: 1px solid black;	
+}
+
+#splash-section .row {
+	padding: 50px;
+	background-color: #EFEFEF;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	/*box-shadow: 0px 0px 3px #AAAAAA;*/
 }
 
 #title-name {
@@ -34,6 +47,7 @@ header {
 
 #project-name {
 	margin-top: 20px;
+	margin-bottom: 50px;
 	font-size: 50px;	
 }
 
@@ -58,21 +72,32 @@ header {
 }
 
 .project {
-/*	margin-top: 50px;
-	margin-bottom: 100px;*/
+	margin-bottom: 80px;
 	padding: 20px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-
 	background-color: white;
+	/*box-shadow: 0px 0px 5px #AAAAAA;*/
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+
+	display: inline-flex;
+	align-items: center;
+}
+
+/*For centering, in mobile mode inline-flex screws up the display*/
+@media (max-width: 1000px) {
+  .project {
+  	display: inline-block;
+  }
 }
 
 #apple-tea {
-	height: 500px;
 	color: white;
 	font-size: 70px;
 	background-color: black;
-	padding-top: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	border-radius: 5px;
 }
 
@@ -151,32 +176,39 @@ header {
   align-items: center;
 }
 
+#appletea {
+	background-color: #77DDDD;
+	/*box-shadow: 0px 0px 3px #00FFFF;*/
+}
+
 #project1 {
-	/*background-color: #FFAAAA;*/
+	background-color: #FFAAAA;
+	/*box-shadow: 0px 0px 3px #000000;*/
 }
 
 #project2 {
-	/*background-color: #FAFAFA;*/
+	background-color: #FAFAFA;
+/*	box-shadow: 0px 0px 3px #AAAAAA;*/
 }
 
 #project3 {
-	/*background-color: #71B533;
-	color: white;*/
-}
-#project3 .hash-tags {
+	background-color: #22FFAA;
 	/*color: white;*/
 }
-#project3 .fa:hover {
-	/*color: #222222;*/
+/*#project3 .hash-tags {
+	color: white;
 }
+#project3 .fa:hover {
+	color: #222222;
+}*/
 
 #project4 {
-	/*background-color: #EEEEFF;*/
+	background-color: #EEEEFF;
 }
 
 #project5 {
-	/*background-color: #000000;*/
-	/*color: white;*/
+	background-color: #EEEEEE;
+/*	color: white;*/
 }
 #project5 .hash-tags {
 	/*color: white;*/
